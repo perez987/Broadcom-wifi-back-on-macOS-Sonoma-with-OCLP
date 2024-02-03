@@ -76,7 +76,7 @@ Note: OCLP has added basic support for 3rd party Broadcom chipsets, not official
 
 AMFI (Apple Mobile File Integrity) was originally seen on iOS but migrated to macOS in 10.12 Sierra, possibly in 2012 when GateKeeper and digitally signed code were introduced. In short, it is a technology that blocks the execution of non signed code. It consists of 2 components:
 
-* `/usr/libexec/amfid` service run as root from '/System/Library/LaunchDaemons/com.apple.MobileFileIntegrity.plist`
+* `/usr/libexec/amfid` service run as root from `/System/Library/LaunchDaemons/com.apple.MobileFileIntegrity.plist`
 * `/System/Library/Extensions/AppleMobileFileIntegrity.kext`.
 
 AMFI must be enabled to grant third-party applications access to privacy-relevant services and/or peripherals, such as external cameras and microphones. But, with SIP and/or AMFI disabled (a necessary condition to apply OCLP root patches) the dialog box to grant access to those applications is not shown to the user so those peripherals simply cannot be used in applications like Zoom or MS Teams, for example.
