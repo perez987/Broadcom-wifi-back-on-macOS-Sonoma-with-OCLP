@@ -88,11 +88,11 @@ If macOS has previously given permissions to these third-party applications and 
 In summary, when applying OCLP root patches you can act in 2 different ways:
 
 * with boot argument `amfi=0x80` without AMFIPass.kext. `amfi=0x80` is a bitmask that disables AMFI completely. The value 0x80 is equivalent to `AMFI_ALLOW_EVERYTHING`
-* with AMFIPass.kext 1.1.3 removing `amfi=0x80` and adding `-amfipassbeta` in boot args.
+* with AMFIPass.kext 1.3.0 removing `amfi=0x80` and adding `-amfipassbeta` in boot args.
 
 The `-amfipassbeta` boot argument is provided by AMFIPass.kext to override kernel version checking, so that the extension is loaded regardless of the macOS version. This way AMFIPass can work on macOS beta for which the extension does not yet have support.
 
-Note: current AMFIPass-kext 1.0.4 doesn't need anymore `amfi=0x80` boot arg on Sonoma.
+Note: current AMFIPass.kext 1.4.0 doesn't need anymore `amfi=0x80` boot arg on Sonoma.
 
 I use AMFIPass.kext, removing `amfi=0x80`. If OCLP root patching fails due to this setting, I temporarily disable AMFI with the boot argument `amfi=0x80`, apply the patches, reboot, remove `amfi=0x80`, and reboot again.
 
