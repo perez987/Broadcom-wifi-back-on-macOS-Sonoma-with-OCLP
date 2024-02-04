@@ -81,7 +81,7 @@ AMFI (Apple Mobile File Integrity) was originally seen on iOS but migrated to ma
 
 AMFI must be enabled to grant third-party applications access to privacy-relevant services and/or peripherals, such as external cameras and microphones. But, with SIP and/or AMFI disabled (a necessary condition to apply OCLP root patches) the dialog box to grant access to those applications is not shown to the user so those peripherals simply cannot be used in applications like Zoom or MS Teams, for example.
 
-AMFI is usually enabled but it has already been seen that OCLP root patches require disabling AMFI and SIP in order to be applied. To avoid the problem of peripherals not working with third-party applications, the OCLP team has developed the **AMFIPass.kext** extension (1.1.3 release) that allows AMFI to be enabled when the system must operate with AMFI and SIP disabled, such as when using OCLP or applying root patches. This fixes the permissions issue and OCLP can apply the patches as if AMFI were disabled.
+AMFI is usually enabled but it has already been seen that OCLP root patches require disabling AMFI and SIP in order to be applied. To avoid the problem of peripherals not working with third-party applications, the OCLP team has developed the **AMFIPass.kext** extension (1.3.0 release) that allows AMFI to be enabled when the system must operate with AMFI and SIP disabled, such as when using OCLP or applying root patches. This fixes the permissions issue and OCLP can apply the patches as if AMFI were disabled.
 
 If macOS has previously given permissions to these third-party applications and then AMFI and/or SIP is disabled, these permissions are transferred and the new system maintains them. But in a clean installation they do not exist. This is the main problem that AMFIPass.kext tries to solve. Being able to root patch OCLP with AMFI enabled is just a positive side effect.
 
@@ -94,6 +94,6 @@ The `-amfipassbeta` boot argument is provided by AMFIPass.kext to override kerne
 
 Note: current AMFIPass.kext 1.4.0 doesn't need anymore `amfi=0x80` boot arg on Sonoma.
 
-I use AMFIPass.kext, removing `amfi=0x80`. If OCLP root patching fails due to this setting, I temporarily disable AMFI with the boot argument `amfi=0x80`, apply the patches, reboot, remove `amfi=0x80`, and reboot again.
+I use AMFIPass.kext, removing `amfi=0x80`. If OCLP root patching fails due to this setting, you can temporarily disable AMFI with the boot argument `amfi=0x80`, apply the patches, reboot, remove `amfi=0x80`, and reboot again.
 
 (credits to [5T33Z0](https://github.com/5T33Z0) for much of the explanatory text about AMFI and AMFIPass.kext).
