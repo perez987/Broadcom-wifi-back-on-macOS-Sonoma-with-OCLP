@@ -4,6 +4,25 @@
 <img width="256" src="Sonoma icon.png">
 </p>
 
+### January 2024 note: macOS Sonoma 14.4. beta breaks OCLP patch
+
+In the beta versions of macOS 14.4, Apple has modified parts of the Wi-Fi stack and OCLP root patch has stopped working so the Fenvi and Broadcom Wi-Fi are no longer operational.
+
+To recover these Wi-Fi, 2 changes are required:
+
+- OLCP 1.4.0 which is not yet an official version, for now you can grab it from OCLP GitHub in the Actions tab >> in the list of workflows choose the most recent one with the text `CI - Build wxPython`
+[Link](https://github.com/dortania/OpenCore-Legacy-Patcher/actions)
+- replace `IOSkywalkFamily.kext`, current version is 1.0.0 and you have to change to version 1.1.0, also available on the OLCP GitHub >> payloads >> Kexts >> Wifi
+[Link](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
+
+How to make the change?
+
+1. revert OCLP root patch
+2. replace `IOSkywalkFamily.kext` and reboot
+3. apply root patch of **OCLP 1.4.0 nightly build**.
+   
+The other settings do not change.
+
 ### Broadcom Wi-Fi stop working in Sonoma
 
 Apple has dropped support for Broadcom Wi-Fi chipset used in pre-2017 Macs:
