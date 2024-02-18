@@ -12,10 +12,8 @@ In the beta versions of macOS 14.4, Apple has modified parts of the Wi-Fi stack 
 
 To recover these Wi-Fi, 2 changes are required:
 
-- OLCP 1.4.0 which is not yet an official version, for now you can grab it from OCLP GitHub in the Actions tab >> in the list of workflows choose the most recent one with the text `CI - Build wxPython`
-[Link](https://github.com/dortania/OpenCore-Legacy-Patcher/actions)
-- replace `IOSkywalkFamily.kext`, current version is 1.0.0 and you have to change to version 1.1.0, also available on the OLCP GitHub >> payloads >> Kexts >> Wifi
-[Link](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
+- OLCP 1.4.0 which is not yet an official version, for now you can grab it from OCLP GitHub in the Actions tab >> in the list of workflows choose the most recent one with the text `CI - Build wxPython` >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/actions)
+- replace `IOSkywalkFamily.kext`, current version is 1.0.0 and you have to change to version 1.1.0, also available on the OLCP GitHub >> payloads >> Kexts >> Wifi >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
 
 How to make the change?
 
