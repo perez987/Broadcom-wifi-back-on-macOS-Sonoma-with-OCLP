@@ -17,9 +17,9 @@ To recover these Wi-Fi, 2 changes are required:
 
 How to make the change?
 
-1. revert OCLP root patch
+1. revert OCLP root patch and reboot
 2. replace `IOSkywalkFamily.kext` and reboot
-3. apply root patch of **OCLP 1.4.0 nightly build**.
+3. apply root patch of **OCLP 1.4.0 nightly build** and reboot.
    
 The other settings do not change.
 
