@@ -22,6 +22,8 @@ How to make the change?
    
 The other settings do not change.
 
+**Note**: Keep in mind that macOS 14.4 is still a beta version and that this may have more changes in subsequent versions until the final one. But at least for now, in beta 3, this OCLP tweak works and allows the Fenvi / Broadcom to become operational again.
+
 ---
 
 ### Broadcom Wi-Fi stop working in Sonoma
