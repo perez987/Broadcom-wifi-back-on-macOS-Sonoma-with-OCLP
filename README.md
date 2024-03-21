@@ -22,7 +22,7 @@ How to make the change?
    
 The other settings do not change.
 
-**Note**: Keep in mind that this may have more changes in subsequent macOS versions. But at least for now, in the already released14.4, this OCLP tweak works.
+**Note**: Keep in mind that this may have more changes in subsequent macOS versions. But at least for now, in the final 14.4, this OCLP tweak works.
 
 ---
 
