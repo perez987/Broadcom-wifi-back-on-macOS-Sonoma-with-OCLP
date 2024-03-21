@@ -12,17 +12,17 @@ In the beta versions of macOS 14.4, Apple has modified parts of the Wi-Fi stack 
 
 To recover these Wi-Fi, 2 changes are required:
 
-- OLCP 1.4.0 which is not yet an official version, for now you can grab it from OCLP GitHub in the Actions tab >> in the list of workflows choose the most recent one with the text `CI - Build wxPython` >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/actions)
+- OLCP 1.4.2 >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/actions)
 - replace `IOSkywalkFamily.kext`, current version is 1.0.0 and you have to change to version 1.1.0, also available on the OLCP GitHub >> payloads >> Kexts >> Wifi >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
 
 How to make the change?
 
 1. replace `IOSkywalkFamily.kext`, revert OCLP root patch and reboot
-2. apply root patch of **OCLP 1.4.0 nightly build** and reboot.
+2. apply root patch of OCLP 1.4.2 and reboot.
    
 The other settings do not change.
 
-**Note**: Keep in mind that macOS 14.4 is still a beta version and that this may have more changes in subsequent versions until the final one. But at least for now, in beta 3, this OCLP tweak works and allows the Fenvi / Broadcom to become operational again.
+**Note**: Keep in mind that this may have more changes in subsequent macOS versions. But at least for now, in the already released14.4, this OCLP tweak works.
 
 ---
 
