@@ -6,7 +6,7 @@
 
 ---
 
-### February 2024: macOS Sonoma 14.4 beta breaks OCLP patch
+### Note: macOS Sonoma 14.4 breaks OCLP patch
 
 In the beta versions of macOS 14.4, Apple has modified parts of the Wi-Fi stack and OCLP root patch has stopped working so the Fenvi and Broadcom Wi-Fi are no longer operational.
 
@@ -22,7 +22,7 @@ How to make the change?
    
 The other settings do not change.
 
-**Note**: Keep in mind that this may have more changes in subsequent macOS versions. But at least for now, in the final 14.4, this OCLP tweak works.
+**Note**: Keep in mind that this may have more changes in subsequent macOS versions. But at least for now this OCLP tweak works.
 
 ---
 
