@@ -4,8 +4,6 @@
 <img width="256" src="Sonoma icon.png">
 </p>
 
-(Clic [here](https://perez987.github.io/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP/) to see this repo as GitHub pages)
-
 ---
 
 ### Note: macOS Sonoma 14.4 breaks OCLP patch
@@ -121,3 +119,7 @@ Note: current AMFIPass.kext 1.4.0 doesn't need anymore `amfi=0x80` boot arg on S
 I use AMFIPass.kext, removing `amfi=0x80`. If OCLP root patching fails due to this setting, you can temporarily disable AMFI with the boot argument `amfi=0x80`, apply the patches, reboot, remove `amfi=0x80`, and reboot again.
 
 (credits to [5T33Z0](https://github.com/5T33Z0) for much of the explanatory text about AMFI and AMFIPass.kext).
+
+---
+
+(Clic [here](https://perez987.github.io/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP/) to see this repo as GitHub pages)
