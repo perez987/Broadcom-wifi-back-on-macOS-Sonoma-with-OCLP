@@ -4,6 +4,8 @@
 <img width="256" src="Sonoma icon.png">
 </p>
 
+(Clic [here](https://perez987.github.io/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP/) to see this repo as GitHub pages)
+
 ---
 
 ### Note: macOS Sonoma 14.4 breaks OCLP patch
