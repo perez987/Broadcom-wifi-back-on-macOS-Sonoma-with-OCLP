@@ -122,4 +122,8 @@ I use AMFIPass.kext, removing `amfi=0x80`. If OCLP root patching fails due to th
 
 ---
 
+**Note**: there's also a semi-automated patch available, thanks to AppleOSX -> [link](https://github.com/AppleOSX/PatchSonomaWiFiOnTheFly).
+
+---
+
 (Clic [here](https://perez987.github.io/Broadcom-wifi-back-on-macOS-Sonoma-by-OCLP/) to see this repo as GitHub pages)
