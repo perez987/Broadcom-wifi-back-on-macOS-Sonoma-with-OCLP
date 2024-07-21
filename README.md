@@ -6,12 +6,12 @@
 
 ---
 
-#### July 2024: macOS Sequoia 15 breaks OCLP root patch
+#### _July 2024: macOS Sequoia 15 breaks OCLP root patch_
 
 OCLP root patch stopped working on macOS Sequoia beta. OCLP team has a fix, still in development, that allows you to recover Fenvi Wi-Fi on macOS Sequoia.
 You can read about this in the repo [macOS 15 Sequoia beta on Z390 using OpenCore](https://github.com/perez987/macOS-15-Sequoia-on-z390-with-OpenCore) >> [Fenvi and Broadcom Wi-Fi](https://github.com/perez987/macOS-15-Sequoia-on-z390-with-OpenCore?tab=readme-ov-file#fenvi-and-broadcom-wi-fi).
 
-#### March 2024: macOS Sonoma 14.4 breaks OCLP root patch
+#### _March 2024: macOS Sonoma 14.4 breaks OCLP root patch_
 
 In macOS 14.4, Apple has modified parts of the Wi-Fi stack and OCLP root patch has stopped working so the Fenvi and Broadcom Wi-Fi are no longer operational.
 
