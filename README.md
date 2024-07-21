@@ -4,11 +4,14 @@
 <img src="img/Wi-Fi.png">
 </p>
 
----
+### July 2024: macOS Sequoia 15 breaks OCLP root patch
 
-### Note: macOS Sonoma 14.4 breaks OCLP patch
+OCLP root patch stopped working on macOS Sequoia beta. OCLP team has a fix, still in development, that allows you to recover Fenvi Wi-Fi on macOS Sequoia.
+You can read about this in the repo [macOS 15 Sequoia beta on Z390 using OpenCore](https://github.com/perez987/macOS-15-Sequoia-on-z390-with-OpenCore) >> [Fenvi and Broadcom Wi-Fi](https://github.com/perez987/macOS-15-Sequoia-on-z390-with-OpenCore?tab=readme-ov-file#fenvi-and-broadcom-wi-fi).
 
-In the beta versions of macOS 14.4, Apple has modified parts of the Wi-Fi stack and OCLP root patch has stopped working so the Fenvi and Broadcom Wi-Fi are no longer operational.
+### March 2024: macOS Sonoma 14.4 breaks OCLP root patch
+
+In macOS 14.4, Apple has modified parts of the Wi-Fi stack and OCLP root patch has stopped working so the Fenvi and Broadcom Wi-Fi are no longer operational.
 
 To recover these Wi-Fi, 2 changes are required:
 
@@ -20,13 +23,11 @@ How to make the change?
 1. replace `IOSkywalkFamily.kext`, revert OCLP root patch and reboot
 2. apply root patch of OCLP 1.4.2 and reboot.
    
-The other settings do not change.
-
-**Note**: Keep in mind that this may have more changes in subsequent macOS versions. But at least for now this OCLP tweak works.
+Other settings do not change.
 
 ---
 
-### Broadcom Wi-Fi stop working in Sonoma
+### Broadcom Wi-Fi stops working in Sonoma
 
 Apple has dropped support for Broadcom Wi-Fi chipset used in pre-2017 Macs:
 
