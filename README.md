@@ -75,7 +75,7 @@ In summary, this is what to do:
 My Wi-Fi is Fenvi T919 so I have tried this pre-release version of OCLP 0.6.9. I have followed the instructions TO THE LETTER and they have worked well. I have Wi-Fi and Airdrop in Sonoma. Please note that _khronokernel_ instructions must be followed EXACTLY. In short, this version of OCLP 0.6.9 beta works, at least for me.
 <br>
 <p align="center">
-<img width="640" src="Wifi active again.png">
+<img width="640" src="img/Wifi active again.png">
 </p>
 <br>
 
@@ -117,8 +117,6 @@ The `-amfipassbeta` boot argument is provided by AMFIPass.kext to override kerne
 Note: current AMFIPass.kext 1.4.0 doesn't need anymore `amfi=0x80` boot arg on Sonoma.
 
 I use AMFIPass.kext, removing `amfi=0x80`. If OCLP root patching fails due to this setting, you can temporarily disable AMFI with the boot argument `amfi=0x80`, apply the patches, reboot, remove `amfi=0x80`, and reboot again.
-
-(credits to [5T33Z0](https://github.com/5T33Z0) for much of the explanatory text about AMFI and AMFIPass.kext).
 
 ---
 
