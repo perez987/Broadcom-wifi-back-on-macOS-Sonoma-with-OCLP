@@ -123,7 +123,7 @@ I use AMFIPass.kext, removing `amfi=0x80`. If OCLP root patching fails due to th
 
 ---
 
-**Note**: there’s a semi-automated patch available, thanks to AppleOSX, aplicable only when installing from USB, tried with success -> [link](https://github.com/AppleOSX/PatchSonomaWiFiOnTheFly).
+**Note**: There’s a semi-automated patch available, thanks to [HorizonUnix](https://github.com/HorizonUnix), applicable only when installing a fresh installation from USB or hard drive. Tried with success -> [link](https://github.com/HorizonUnix/PatchSonomaWiFiOnTheFly).
 
 ---
 
