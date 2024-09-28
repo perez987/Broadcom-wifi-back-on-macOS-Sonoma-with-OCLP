@@ -9,7 +9,7 @@
 #### _July 2024: macOS Sequoia 15 breaks OCLP root patch_
 
 OCLP root patch stopped working on macOS Sequoia beta. OCLP team has a fix, still in development, that allows you to recover Fenvi Wi-Fi on macOS Sequoia.
-You can read about this in the repo [macOS 15 Sequoia beta on Z390 using OpenCore](https://github.com/perez987/macOS-15-Sequoia-on-z390-with-OpenCore) >> [Fenvi and Broadcom Wi-Fi](https://github.com/perez987/macOS-15-Sequoia-on-z390-with-OpenCore?tab=readme-ov-file#fenvi-and-broadcom-wi-fi).
+You can read about this in the repo [macOS 15 Sequoia beta on Z390 using OpenCore](https://github.com/perez987/macOS-15-Sequoia-on-z390-with-OpenCore) >> Fenvi and Broadcom Wi-Fi.
 
 #### _March 2024: macOS Sonoma 14.4 breaks OCLP root patch_
 
@@ -17,13 +17,13 @@ In macOS 14.4, Apple has modified parts of the Wi-Fi stack and OCLP root patch h
 
 To recover these Wi-Fi, 2 changes are required:
 
-- OLCP 1.4.2 >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
-- replace `IOSkywalkFamily.kext`, current version is 1.0.0 and you have to change to version 1.1.0, also available on the OLCP GitHub >> payloads >> Kexts >> Wifi >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
+- OLCP 1.4.2 or newer >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
+- replace `IOSkywalkFamily.kext` 1.0.0 by 1.1.0, also available on the OLCP GitHub >> payloads >> Kexts >> Wifi >> [Link](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Wifi)
 
 How to make the change?
 
 1. replace `IOSkywalkFamily.kext`, revert OCLP root patch and reboot
-2. apply root patch of OCLP 1.4.2 and reboot.
+2. apply root patch of OCLP and reboot.
    
 Other settings do not change.
 
