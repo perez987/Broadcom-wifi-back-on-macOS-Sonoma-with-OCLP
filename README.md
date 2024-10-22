@@ -4,6 +4,12 @@
 <img src="img/Wi-Fi icon.png">
 </p>
 
+---
+
+<p align="center">
+<a href="README.html">(View as static HTML)</a>
+</p>
+
 #### _July 2024: macOS Sequoia 15 breaks OCLP root patch_
 
 OCLP root patch stopped working on macOS Sequoia. OCLP team has a fix that allows you to recover Fenvi Wi-Fi on macOS Sequoia.
