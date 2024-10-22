@@ -6,9 +6,7 @@
 
 ---
 
-<p align="center">
-<a href="README.html">(View as static HTML)</a>
-</p>
+[(View as static HTML)](README.html)
 
 #### _July 2024: macOS Sequoia 15 breaks OCLP root patch_
 
