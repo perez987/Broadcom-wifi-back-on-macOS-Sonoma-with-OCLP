@@ -1,7 +1,7 @@
 ## Get back Fenvi T919 and other Broadcom Wi-Fi on macOS 14 Sonoma thanks to OLCP
 
 <p align="center">
-<img src="img/Wi-Fi.png">
+<img src="img/Wi-Fi icon.png">
 </p>
 
 ---
